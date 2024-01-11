@@ -2,6 +2,7 @@ import * as THREE from "three";
 import Experience from "../Experience.js";
 
 import Room from "./Room.js";
+import Environment from "./Environment.js";
 
 
 export default class World{
@@ -15,6 +16,7 @@ export default class World{
 
         this.resources.on("ready", ()=>{
             this.room = new Room();
+            this.environment = new Environment();
         });
 
 
